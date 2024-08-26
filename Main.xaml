@@ -1,0 +1,929 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1289.6,8370.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:sd1="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="60">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Windows</x:String>
+      <x:String>System.Windows.Media.Animation</x:String>
+      <x:String>System.Windows.Media</x:String>
+      <x:String>System.Windows.Threading</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.Core.Activities.OCR.Engines</x:String>
+      <x:String>System.Management.Automation</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="36">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Management.Automation</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="main sequence" sap:VirtualizedContainerService.HintSize="1300,8305.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="https://rpachallengeocr.azurewebsites.net" Name="strRpaChallangeUrl" />
+      <Variable x:TypeArguments="x:String" Name="strInvoiceFullPath" />
+      <Variable x:TypeArguments="sd1:DataTable" Name="ExtractDataTable" />
+      <Variable x:TypeArguments="x:String" Name="href" />
+      <Variable x:TypeArguments="x:String" Name="innerH" />
+      <Variable x:TypeArguments="x:Int32" Name="IntRowTable" />
+      <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="children" />
+      <Variable x:TypeArguments="scg:List(x:String)" Default="[new List(of String)]" Name="listInvoicesPath" />
+      <Variable x:TypeArguments="x:String" Name="hrefVal" />
+      <Variable x:TypeArguments="x:String" Name="strCompanyName" />
+      <Variable x:TypeArguments="sd1:DataTable" Name="dtInvoices" />
+      <Variable x:TypeArguments="x:Int32" Name="rowData">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="strInvoiceNumber" />
+      <Variable x:TypeArguments="x:String" Name="strCorrectInvoiceNumber" />
+      <Variable x:TypeArguments="x:String" Name="intID" />
+      <Variable x:TypeArguments="x:String" Name="strInvoiceDate" />
+      <Variable x:TypeArguments="x:String" Name="strTotalDue" />
+      <Variable x:TypeArguments="x:Boolean" Name="boolAeneanLLC" />
+      <Variable x:TypeArguments="x:String" Name="strInvoiceName" />
+      <Variable x:TypeArguments="sd1:DataTable" Name="dtInvoicesCSV" />
+      <Variable x:TypeArguments="sd1:DataTable" Name="dtInvoicesCSVFiltered" />
+      <Variable x:TypeArguments="x:String" Name="toDay" />
+      <Variable x:TypeArguments="x:Int32" Name="intTablePage">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:Int32" Name="int_dtInvoicesRowNumber" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use of Rpachallengeocr web page " sap:VirtualizedContainerService.HintSize="1258.4,7604.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="dff7edce-2821-4c3c-add9-c823fe9317e3" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1224.8,7388" sap2010:WorkflowViewState.IdRef="Sequence_14">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NExtractData sap2010:Annotation.AnnotationText="Invoices DataTable Extraction&#xD;&#xA;" AppendResults="False" ContinueOnError="True" DataTable="[dtInvoices]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='#' ReferenceIdx='0' Name='#'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='ID' ReferenceIdx='1' Name='ID'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Due Date' ReferenceIdx='2' Name='Due Date'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Invoice' ReferenceIdx='3' Name='Invoice'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='#' attr='text' /&gt;&lt;column name='ID' attr='text' /&gt;&lt;column name='Due Date' attr='text' /&gt;&lt;column name='Invoice' attr='text' /&gt;&lt;/extract-table&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="1183.2,201.6" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="dff7edce-2821-4c3c-add9-c823fe9317e3" Version="V1">
+              <uix:NExtractData.NextLink>
+                <uix:TargetAnchorable BrowserURL="https://rpachallengeocr.azurewebsites.net/" DesignTimeRectangle="1702, 688, 72, 45" ElementType="Text" FriendlyName="'Next'" FullSelectorArgument="&lt;webctrl id='tableSandbox_next' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='tableSandbox_next' tag='A' type='' aaname='Next' check:text='Next' /&gt;" Guid="16bc37b4-f760-4b2a-8ecf-407445690d51" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEwAAAAxCAYAAABwK080AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAGgSURBVGhD7daLacMwFIXh7uS5olWMd8gAziTBYwS8w60k36uHH6GHRFDE+UE0VRIXfchyf4RBEQyMYGAEAyMYGMHACAZGMDCCgREMjGBgBAMjGBjBwAgGRjAwgoG1AXuOMgyDH6MsOrVvmd6//19rDObHdE7SBmyR8c3f/EZNwcYp/HQyv3S+iGBlBvZUmNssq75lEaysAJPXLM6/do+a7Axsfbj4vTQStEL4Ea+ZWmW+bfPufo9/J3//fGd/Wnsw3wZR49RgtvBykTZnnzG0fB0Dzog97LCYLr5YSAl2XLi23536e7xO+TrVDZgvzuUdVIJdn2cKXZyB1W17OBt7AvNFGF1kRsrn0OWoYK7Os1BnYHYbhfm/7bBj22eduMOZF+oNzGcPgLFA2ubOnmoKYDtMrxvPNDvDznZfT2DpXAoLS7tq/0QM2ZxB7vB8dp7lf1n0O32B+fT9/W243W7FSDiK5Ud9zYxvaPmhcLZjP68NWMcRDIxgYAQDIxgYwcAIBkYwMIKBEQyMYGAEAyMYGMHACAZGMDCCgREMjGBQIr+srKRzTt5UoAAAAABJRU5ErkJggg==" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Automation Challenge - OCR' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NExtractData.NextLink>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="474, 405, 1302, 241" FriendlyName="'#IDDue DateInvoice'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="57f364fc-2ce1-4097-9e3d-f27d7dc5139e" InformativeScreenshot="7a06acd6759cff8ba598ce39638d17e8.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Automation Challenge - OCR' /&gt;" SearchSteps="Selector" />
+              </uix:NExtractData.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NExtractData>
+            <Assign sap2010:Annotation.AnnotationText="We try to get the total numer of table rows, useful in case of dynamical table" sap:VirtualizedContainerService.HintSize="1183.2,105.6" sap2010:WorkflowViewState.IdRef="Assign_27">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[int_dtInvoicesRowNumber]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">[dtInvoices.RowCount]</InArgument>
+              </Assign.Value>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Assign>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1183.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_57" Level="Info" Message="[&quot;Table Contient &quot; + int_dtInvoicesRowNumber.ToString]" />
+            <ui:BuildDataTable sap2010:Annotation.AnnotationText="building the table for CSV output" DataTable="[dtInvoicesCSV]" DisplayName="Build CSV  Data Table" sap:VirtualizedContainerService.HintSize="1183.2,91.2" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;ID&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Due_x0020_Date&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Invoice_x0020_No&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Invoice_x0020_Date&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Company_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Total_x0020_Due&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName /&gt;&#xA;&lt;/NewDataSet&gt;">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:BuildDataTable>
+            <uix:NClick sap2010:Annotation.AnnotationText="we click on the first page since during data extraction it remains at the end" ClickType="Single" DisplayName="Click 1srt table page" sap:VirtualizedContainerService.HintSize="1183.2,201.6" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="dff7edce-2821-4c3c-add9-c823fe9317e3" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://rpachallengeocr.azurewebsites.net/" DesignTimeRectangle="1554, 559, 47, 45" ElementType="Text" FriendlyName="'1'" FullSelectorArgument="&lt;webctrl aaname='1' parentid='tableSandbox_paginate' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='1' parentid='tableSandbox_paginate' tag='A' type='' check:text='1' /&gt;" Guid="92aeec32-8d78-4015-813d-7ca8a001c23f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADMAAAAxCAYAAAB3aZEhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHRSURBVGhD7ZpZbsJQDEW7JxbVYR8d6AZYQCf1iy2kA+0C+GlFEiJmEDOImbiYkici2SglDykmtXRkWdeJfH6jnMAR1XHKtFotSKfTkEqlxID34t1eKRkMstksuK4rBrwX7/ZKyaAp9UDUwbu98sksl0txsDKLxUKBixJmVmY+n4uDlZnNZr5FCTMrM51OFbhI9ajlgWSkwMqMx2OYTCai+k4ZabAyo9FIHPGQGQ6H4oiHzGAwEAcr0+/3FbhI9X1y5/kCEolb+GTy7f7XnJXp9Xr6eU+uRBIrkvBB5SFhZbrd7nohfLfh6RwFtklCJvDzwTsr0+l0FLioZ7bh8QxlbiBD5uHmQDL6oGV0wcrgx4F2u63QM1sbmWt40/I+/7xTRj8mPGzJ0Dv7w8o0m80DkIP7tcwVvJJ5OOIh02g0DsA33J3+yryQeTjiIVOv1w/A10bmEgwyDwcrU6vVFLgoYWZlqtWqOFiZSqXiW5QwszLlclmBi1SPWh5IRgqsTLFYhFKpJKrvlJEGK1MoFMQRDxnHccQRD5l8Pi8OVsa2bQUuUj1qOStjWZY4SBn8OcAwjPWCaZoiOt5L/tSAHwcwQFMp4L14t1dK5hjqXyaaBfADs3FcPV/kh1oAAAAASUVORK5CYII=" InformativeScreenshot="de82fc1457686c0c8e9901eb6e92f0f4.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Automation Challenge - OCR' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <ui:InterruptibleDoWhile sap2010:Annotation.AnnotationText="do while loop to go through the 4 pages of the table in order to get &lt;TD&gt; of &lt;TBODY&gt; for whole table " DisplayName="Do While" sap:VirtualizedContainerService.HintSize="1183.2,6400.8" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+              <ui:InterruptibleDoWhile.Body>
+                <Sequence sap:VirtualizedContainerService.HintSize="1148,6202.4" sap2010:WorkflowViewState.IdRef="Sequence_89">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Sequence sap2010:Annotation.AnnotationText="the goal is to have the href link of each image's row  in order to download it" DisplayName="Invoces Downloading and Processing" sap:VirtualizedContainerService.HintSize="1106.4,5184" sap2010:WorkflowViewState.IdRef="Sequence_58">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:FindChildren sap2010:Annotation.AnnotationText="The activity tries to get the entire &#xD;&#xA;&lt;TD&gt; of &lt;TBODY&gt; for each page." Children="[children]" DisplayName="Find &lt;TBODY&gt;'s Childrens" Filter="&lt;webctrl /&gt;" sap:VirtualizedContainerService.HintSize="1064.8,151.2" sap2010:WorkflowViewState.IdRef="FindChildren_1" Scope="FIND_DESCENDANTS">
+                      <ui:FindChildren.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="90779039-afe7-4102-a6a1-45f58a7dbb03" InformativeScreenshot="af41e0ca89c36d08b0cc24af3a0825b2" Selector="&lt;webctrl parentid='tableSandbox' tag='TBODY' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:FindChildren.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:FindChildren>
+                    <ui:ForEach x:TypeArguments="ui:UiElement" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="1064.8,4868.8" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[children]">
+                      <ui:ForEach.Body>
+                        <ActivityAction x:TypeArguments="ui:UiElement">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ui:UiElement" Name="item" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1029.6,4744" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NGetAttribute sap2010:Annotation.AnnotationText="The activity tries to get the href link of each image's row  in order to download and process it" Attribute="href" DisplayName="Get Href Attribute" sap:VirtualizedContainerService.HintSize="988,232" sap2010:WorkflowViewState.IdRef="NGetAttribute_2" InUiElement="[item]" ScopeIdentifier="dff7edce-2821-4c3c-add9-c823fe9317e3" Version="V1">
+                              <uix:NGetAttribute.Result>
+                                <OutArgument x:TypeArguments="x:String">[hrefVal]</OutArgument>
+                              </uix:NGetAttribute.Result>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NGetAttribute>
+                            <If sap2010:Annotation.AnnotationText="we try to get the &lt;TD&gt; lines having only the href property" Condition="[not String.IsNullOrEmpty(hrefVal)]" sap:VirtualizedContainerService.HintSize="988,4379.2" sap2010:WorkflowViewState.IdRef="If_2">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <If.Then>
+                                <Sequence sap:VirtualizedContainerService.HintSize="952.8,4159.2" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Assign sap2010:Annotation.AnnotationText="we try to build the invoice fullPath concantainig PRAChallange URL and hrefVal  " DisplayName="InvoiceFullPath Assignation" sap:VirtualizedContainerService.HintSize="911.2,120" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:String">[strInvoiceFullPath]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:String">[strRpaChallangeUrl+""+hrefVal]</InArgument>
+                                    </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Assign>
+                                  <Assign sap2010:Annotation.AnnotationText="because the last column containing the image is empty during extraction, we assign the absolute link of the image" DisplayName="Data table Column Updating" sap:VirtualizedContainerService.HintSize="911.2,120" sap2010:WorkflowViewState.IdRef="Assign_9">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Object">[dtInvoices.Rows(rowData).Item("Invoice")]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Object">[strInvoiceFullPath]</InArgument>
+                                    </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Assign>
+                                  <Assign sap2010:Annotation.AnnotationText="in the invoice FullPath, the activity tries to get only the Invoce name by the use of Substring and LastIndexOF function" DisplayName="InvoiceName Assignation" sap:VirtualizedContainerService.HintSize="911.2,120" sap2010:WorkflowViewState.IdRef="Assign_3">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:String">[strInvoiceName]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:String">[strInvoiceFullPath.substring(strInvoiceFullPath.LastIndexOf("/")+1)]</InArgument>
+                                    </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Assign>
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="911.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Info" Message="[strInvoiceFullPath]" />
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="911.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="Info" Message="[strInvoiceName]" />
+                                  <ui:GetLastDownloadedFile File="{x:Null}" Timeout="{x:Null}" sap2010:Annotation.AnnotationText="the activity waits the complet Invoice downloading befor process it" DisplayName="Wait for Download Invoices" DownloadFolder="DownloadFiles" sap:VirtualizedContainerService.HintSize="911.2,529.6" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1">
+                                    <ui:GetLastDownloadedFile.Body>
+                                      <ActivityAction>
+                                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,288.8" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:InvokeCode ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="downloading Process" Code="Using w As New System.Net.WebClient()&#xA;   w.DownloadFile(Url,Path)&#xA;End Using" DisplayName="Invoke code" sap:VirtualizedContainerService.HintSize="333.6,196" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+                                            <ui:InvokeCode.Arguments>
+                                              <InArgument x:TypeArguments="x:String" x:Key="Url">[strInvoiceFullPath]</InArgument>
+                                              <InArgument x:TypeArguments="x:String" x:Key="Path">["C:\Users\kofip001\Documents\UiPath\RPAChallange\DownloadFiles\"+ strInvoiceName]</InArgument>
+                                            </ui:InvokeCode.Arguments>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </ui:InvokeCode>
+                                        </Sequence>
+                                      </ActivityAction>
+                                    </ui:GetLastDownloadedFile.Body>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:GetLastDownloadedFile>
+                                  <Sequence DisplayName="OcrText" sap:VirtualizedContainerService.HintSize="911.2,2474.4" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NApplicationCard sap2010:Annotation.AnnotationText="opening each invoice in the browser&#xD;&#xA;" AttachMode="ByInstance" DisplayName="Use Browser Edge: sample1.jpg (816×1056)" sap:VirtualizedContainerService.HintSize="869.6,2381.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="57aeb907-65f6-4c5a-a386-055b6c721993" Version="V1" WindowResize="Restore">
+                                      <uix:NApplicationCard.Body>
+                                        <ActivityAction x:TypeArguments="x:Object">
+                                          <ActivityAction.Argument>
+                                            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                          </ActivityAction.Argument>
+                                          <Sequence sap2010:Annotation.AnnotationText="do while loop to loop through all table pages in the browser until reaching the end&#xD;&#xA;" DisplayName="Do" sap:VirtualizedContainerService.HintSize="836,2120.8" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                                            <Sequence.Variables>
+                                              <Variable x:TypeArguments="x:String" Name="strTablePage" />
+                                            </Sequence.Variables>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ui:ImageFound sap2010:Annotation.AnnotationText="Check if we are in the presence of a Aenean LLC Invoice&#xD;&#xA;" DisplayName="Image Exists 'msedge.exe 7.jpg'" Found="[boolAeneanLLC]" sap:VirtualizedContainerService.HintSize="794.4,167.2" sap2010:WorkflowViewState.IdRef="ImageFound_1">
+                                              <ui:ImageFound.Image>
+                                                <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHcAAAAtCAYAAACULPQbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAvwSURBVHhe7dkHyF3FEgfw2Luxdw2xJopGUexKRI1ixxpj70ZQxA6K3SSKGhQ7NrAndkUTe6/YYjeKvffeXfnNy1zOvfmefFfI43E4f1j2nNnZqbuze+7tUxrUFk1ya4wmuTVGk9wao0lujdEkt8ZokltjNMmtMZrk1hhNcmuMJrk1RpPcGqNJbo3RJLfGaJJbYzTJrTGa5NYYTXJrjCa5NUZbcv/8889JT6X89ttv0Sftjz/+iD7x119/TXr6z3P1PWGueZ1jv//+e0uu3ni+V2UlvXN+53uVp7OvIn2o6gLvPelJvhxjN3hOWqd/nnO8N+iUUY1zVd+/QSu5jMkmsQTr01CNYrRq4tMwzZx8Rs95WtVQz2idc3I8W+dYztNSb1V/vkPOSTrkWE9zyYSkpw7wTPevv/7aes55njVI+37++eeWvIxVT0g5qQ/0KRedzpSf9vQWreRWHfnpp5+i/+abb8qrr75azjrrrDJ69OhyySWXlM8//zz4quDAL7/80jIGGIhOVjqIRq53sqvvQIaWSAfzGfB/9dVXbTIFU0PL9x9++KE1h00//vhjyE4ejezUoa8GEugC4zfeeGM55ZRTygUXXFA+/fTToKf96bO53s8555xy6qmnliuvvLJ89913Mfbf8P3334eciRMnlgMOOKCstdZaZdFFFy3bbLNNGTlyZHnvvfciVv8Gk5VljqTzAnTMMceUGWaYofTp06fMN9985dZbbw0+Y3oNMlh6QdRn4ECf/MbAc9Lz3ZhewHIcJIW8DL4xScSfDTLAkHTvSdMnPe2t8kGVplmg22+/fZluuunKgAEDyoQJE4KXn9knLKKll166TD311GX99dcvH3zwwaSRnsHPCy+8sPTv3z/kmzfttNNGvPXLLrtsue+++4K3qqc3aCvLGegM0GeffRYraZpppgmllEv2t99+G3M4bg4D9ZkAdH01Mfmc9NSjVY0my3zjVXkpP3UZrzY81blVHs85lvTUlfKTD/Id0OjdcsstI9jLLbdcefbZZ1tj1R7IW2yxxcoss8xSNt544/Lhhx9OGpkc9Nxyyy1l/vnnL1NNNVX0+++/fzniiCPKjjvuWPr27RtJHjRoUHn//ffb9PQGbclNcIZiK4aRFK+55prRr7766uWjjz6KcY4kv2cl++GHH46VeNNNN5V33nknxvFqStRjjz1WXnnllQisUjR27Nhy2223laeffjp2YjXY3t99993gueiii8o999xTvv7669Z4Hh8Wh9101VVXlTPPPLPcf//95e233w7dAoKHbc8991yU9C+//DJkXXvtteWuu+4qn3zySfCSi19fBZu22mqr8N/Off7554On2qp29+vXLzbDkCFD/jG5/LNjZ5pppjLHHHOU8ePHly+++CL8YS9/VE2L6uSTTw753aCtLAs4wQzVDj/88DBSmbn99ttbZeOFF16IcbwZ4JtvvrmsuOKKEQB8VtwiiyxSRowYETudbPMYOtdcc5XTTjutzD333K2SP9tss8WisFDIdRZJVK7qGWecMfqVV145VjseiRCMPfbYo8w888whm3342Mwm8ti3xRZbxPjmm29edt9995aN2mabbVaeeOKJHoNnLhnbbbddyF1++eVjIfG/Cnwaem+TK5mSivfQQw+NublYNJVzp512KmussUbZeeedQ343aCWXsAxEBs3BTvFhhx0WwVx44YUjQHvvvXcYkqv8rbfeKksuuWSU7xVWWKHssssusdOnn376KC2XXnpp8AogmoRK8EYbbRTBJtdcgVPy6LLzzZU0Qdptt93K4osvHvY4h5566qlYWOeee24kyn1AKdtrr71id6EtscQSUR34tOmmm4btgsnWrbfeOo4clQl9v/32i/OSPxlEzyAuyjLdyyyzTCzSHOvkFxdlGe+GG274j2euC1ou3Ouvv36yoyNlewd2dIO25KZgvZsxpwVXoBktqYwWSOUteY877rigO4+efPLJ2KlWt11mZ0igMvP444+3duo+++xT3njjjSiJznEO2sl2G4cGDx4cC0FilWYy77jjjuCREGWKTXYUPccff3yUbAlSLVSCeeedN8qvxbLtttuGjea7+Vq8vgRWXXXVsEci7LKMQ8YEplRyDz744NAtnvfee28rqfSlfLSsqEnrLdrKMjCOIEG1qjj/2muvhcIrrrgidhiDlFCGUOzAn3XWWcu6664b139npNJp90qac9qZqpkvaXYeY8mVNAkjgw40OugfPnx40Mh0BkkY+p577tkKnBL+5ptvhu6jjjoqymJWB6UP7Fx67VaJZTv9FgddbFSBIIOY/ZRKrmOP7jnnnDPsTDkgrs7kpMlJt2i7UOWKUT4d9AxU4uysE088MXbb7LPPHhcAhufnkPLHSLvcKnROavPMM0+UQQvEZUbJlRglU6IzGOPGjWs5ec0118RZYxGoHHYgWSnXztMr0x9//HFc4NZee+1YRGxbaqmlokkuXjuXjaoHfzbZZJPWd2rufHrYaIHYKRpkAqdUcs8444yIh4V98cUXtzYWefn80ksvhY8uoWlXb9FWloGAUaNGRaAYKGiS4dnK984gCX3mmWfCiJVWWil4Nthgg3L11VdHaXUDVs41AVaWH3300ZBh/ssvvxxOcMC45Npp1113XSTNeUvnQQcdVO68884opSlTVVDiHQ2OArol2Nn+wAMPlJNOOqm1KHJHZHJcnhwF6e8OO+wQyXVpccNGz7Hsp1RyJS2/RtwV+ANkuE/42lhvvfXKwIEDy5FHHhn0btC2c012bg0dOjQUKpM+AVxU3NacW0qtYEqylWeeBNhpAu3XlJQl2Iccckj8YiO5gsJpibSTAd/dd98dNI5aHOZzCK8fDwTNIvAJ5pcfjkoyGeyUHCUZn0Q4f9mnckg2ecqy3ewSl/cFbdiwYaGHX3YuXnSyNJhSyZXA1VZbLXxg29lnnx266eOv6iTWYvvII4/EWDeY7MwlxK2UQiWMsemAZxcmQWO8a7qk+e5L2iqrrBIlfNddd41SKsjOQY7gIxefxJDJCbsLTbUYM2ZMXIqUKXOVeiX1hBNOiMrA0QUWWCDOX0myANEsPLv59NNPj9u3oCjLeRk0TrcfFnzn0i2IFrKFJbm5c6vJ9YzX7ZouC4mtnY0N5513Xsxx5meFwk++cQ1twQUXjE9L8J1tMWRFFD8LiQ9kaC6y+cnZDdrKsiD4tLCK7CI35nQyr+mUuJ0y1NlmFaPZpd7TIDKcoc5pnyMCmbdlTaIzwJIrAEqxHxbosksPPPDASCRdksV5x4HbsAqD7+ijjw49goNPoCSMLOe9ZLNPwATagnUrNpe/eMleZ511yuuvvx4+ZhAlFo/5kiuJ9LC1p+Z3Z7f6/PmRn3Tq2Y6Gb6GFFmp9q/P/8ssvj2OB/eSLH5scLfvuu2+ct+zA2w3adi6nrF7Xci1/3NcIZgyeF198sTz00ENxhrqporvZ+bRg9GWXXVbOP//82OWSZK5AkecXqgcffDB+rcpdIVHOHzdol51cSFkV7D5HgN3qrM4/BQSdTLb6c0Nw2aYUkkeXzy2yzFOV9ClfEzh+uODld66WidU8k0vePzU/EfKVPD76hY8d7LOwq7wujeSyRbMBbrjhhnLsscfGsSOGLraqkxjxtVu07VwJqgpJ5eiJ6vXcHM96ATfmWZAyKN457B0dqvPp01IWPj29+Y+JBsbo0dLO7FOXRZP8uajMSzmeyQaLMp/p7LQFPOPLZzYZ66mlHjqTHw2Mk10dEy8L2LNxqMrCz4cEvm7QtnM5kQZlsCADhkax4IJ3wTGWvBnQbBxAywWS4/irf4eRk3Ty00G0TEDakM27seQj23OnDZ10snMM0Mmqyk8eQPeeSN7Ohj93P33iiZZjycfmlJ+6PWvmmJst50HGobdoS24aVHWsagA6Bd4hE5dj5qbhGnnG0nhAy7FMTMrLd/zppGdIJ/XZjOvJyx4PeZr3tLHTzk4Z2aqyUn/qzflJ62zGUk91LnrOM5668AB6Vb6W454h5XaDtuRCNwI6ebtV/r9ATzb9P9o5JTBZchvUB01ya4wmuTVGk9wao0lujdEkt7Yo5W+2h0VBRm4fZgAAAABJRU5ErkJggg==" />
+                                              </ui:ImageFound.Image>
+                                              <ui:ImageFound.Target>
+                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="433103fc-d733-40f0-914d-e0502af652d7">
+                                                  <ui:Target.TimeoutMS>
+                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                  </ui:Target.TimeoutMS>
+                                                  <ui:Target.WaitForReady>
+                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                  </ui:Target.WaitForReady>
+                                                </ui:Target>
+                                              </ui:ImageFound.Target>
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </ui:ImageFound>
+                                            <If sap2010:Annotation.AnnotationText="because we are dealing with two types of invoices, we check first so as not to cause an error" Condition="[boolAeneanLLC]" sap:VirtualizedContainerService.HintSize="794.4,1516" sap2010:WorkflowViewState.IdRef="If_3">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <If.Then>
+                                                <Sequence sap2010:Annotation.AnnotationText="In case of Aennean LLC Invoices" DisplayName="Aennean LLC Invoices Processing" sap:VirtualizedContainerService.HintSize="375.2,1324" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_58" Level="Info" Message="[&quot;Aennean LLC Invoice &quot;]" />
+                                                  <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Get OCR Invoice Number Text" sap:VirtualizedContainerService.HintSize="333.6,169.6" sap2010:WorkflowViewState.IdRef="GetOCRText_8">
+                                                    <ui:GetOCRText.OCREngine>
+                                                      <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
+                                                        <ActivityFunc.Argument>
+                                                          <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                                                        </ActivityFunc.Argument>
+                                                        <ui:GoogleOCR AllowedCharacters="{x:Null}" DeniedCharacters="{x:Null}" FilterRegion="{x:Null}" Invert="{x:Null}" Language="{x:Null}" Output="{x:Null}" Profile="{x:Null}" Scale="{x:Null}" Text="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="GoogleOCR_5" Image="[Image]" />
+                                                      </ActivityFunc>
+                                                    </ui:GetOCRText.OCREngine>
+                                                    <ui:GetOCRText.Target>
+                                                      <ui:Target Element="{x:Null}" Id="34454cde-7a2d-4ec9-ac1c-c27453d1c7e7" InformativeScreenshot="a75f8f44b2c7c6aae6bc64b72b883893" Selector="&lt;webctrl tag='IMG' /&gt;">
+                                                        <ui:Target.ClippingRegion>
+                                                          <ui:Region Rectangle="420, 78, 37, 11" />
+                                                        </ui:Target.ClippingRegion>
+                                                        <ui:Target.TimeoutMS>
+                                                          <InArgument x:TypeArguments="x:Int32" />
+                                                        </ui:Target.TimeoutMS>
+                                                        <ui:Target.WaitForReady>
+                                                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                        </ui:Target.WaitForReady>
+                                                      </ui:Target>
+                                                    </ui:GetOCRText.Target>
+                                                    <ui:GetOCRText.Text>
+                                                      <OutArgument x:TypeArguments="x:String">[strInvoiceNumber]</OutArgument>
+                                                    </ui:GetOCRText.Text>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                  </ui:GetOCRText>
+                                                  <Assign sap2010:Annotation.AnnotationText="obtain invoice number by removing the # character" DisplayName="InvoiceNumber Assignation" sap:VirtualizedContainerService.HintSize="333.6,105.6" sap2010:WorkflowViewState.IdRef="Assign_5">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:String">[strCorrectInvoiceNumber]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:String">[strInvoiceNumber.Replace("#",string.Empty).Trim]</InArgument>
+                                                    </Assign.Value>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                  </Assign>
+                                                  <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Get OCR Invoice Date Text" sap:VirtualizedContainerService.HintSize="333.6,169.6" sap2010:WorkflowViewState.IdRef="GetOCRText_6">
+                                                    <ui:GetOCRText.OCREngine>
+                                                      <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
+                                                        <ActivityFunc.Argument>
+                                                          <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                                                        </ActivityFunc.Argument>
+                                                        <ui:GoogleOCR AllowedCharacters="{x:Null}" DeniedCharacters="{x:Null}" FilterRegion="{x:Null}" Invert="{x:Null}" Language="{x:Null}" Output="{x:Null}" Profile="{x:Null}" Scale="{x:Null}" Text="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="GoogleOCR_3" Image="[Image]" />
+                                                      </ActivityFunc>
+                                                    </ui:GetOCRText.OCREngine>
+                                                    <ui:GetOCRText.Target>
+                                                      <ui:Target Element="{x:Null}" Id="34454cde-7a2d-4ec9-ac1c-c27453d1c7e7" InformativeScreenshot="cac3da5c0e734d38fb448b1a75eb7d60" Selector="&lt;webctrl tag='IMG' /&gt;">
+                                                        <ui:Target.ClippingRegion>
+                                                          <ui:Region Rectangle="436, 67, 53, 15" />
+                                                        </ui:Target.ClippingRegion>
+                                                        <ui:Target.TimeoutMS>
+                                                          <InArgument x:TypeArguments="x:Int32" />
+                                                        </ui:Target.TimeoutMS>
+                                                        <ui:Target.WaitForReady>
+                                                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                        </ui:Target.WaitForReady>
+                                                      </ui:Target>
+                                                    </ui:GetOCRText.Target>
+                                                    <ui:GetOCRText.Text>
+                                                      <OutArgument x:TypeArguments="x:String">[strInvoiceDate]</OutArgument>
+                                                    </ui:GetOCRText.Text>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                  </ui:GetOCRText>
+                                                  <Assign sap2010:Annotation.AnnotationText="conversion invoce date to dd/MM/yyy format" DisplayName="Formated Date Assignation" sap:VirtualizedContainerService.HintSize="333.6,105.6" sap2010:WorkflowViewState.IdRef="Assign_7">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:String">[strInvoiceDate]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:String">[Convert.ToDateTime(strInvoiceDate).ToString("dd-MM-yyyy")]</InArgument>
+                                                    </Assign.Value>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                  </Assign>
+                                                  <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Get OCR Company Name Text" sap:VirtualizedContainerService.HintSize="333.6,169.6" sap2010:WorkflowViewState.IdRef="GetOCRText_4">
+                                                    <ui:GetOCRText.OCREngine>
+                                                      <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
+                                                        <ActivityFunc.Argument>
+                                                          <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                                                        </ActivityFunc.Argument>
+                                                        <ui:GoogleOCR AllowedCharacters="{x:Null}" DeniedCharacters="{x:Null}" FilterRegion="{x:Null}" Invert="{x:Null}" Language="{x:Null}" Output="{x:Null}" Profile="{x:Null}" Scale="{x:Null}" Text="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="GoogleOCR_1" Image="[Image]" />
+                                                      </ActivityFunc>
+                                                    </ui:GetOCRText.OCREngine>
+                                                    <ui:GetOCRText.Target>
+                                                      <ui:Target Element="{x:Null}" Id="34454cde-7a2d-4ec9-ac1c-c27453d1c7e7" InformativeScreenshot="cd73e6643a8665493b4fb999d20327be" Selector="&lt;webctrl tag='IMG' /&gt;">
+                                                        <ui:Target.ClippingRegion>
+                                                          <ui:Region Rectangle="34, 36, 100, 24" />
+                                                        </ui:Target.ClippingRegion>
+                                                        <ui:Target.TimeoutMS>
+                                                          <InArgument x:TypeArguments="x:Int32" />
+                                                        </ui:Target.TimeoutMS>
+                                                        <ui:Target.WaitForReady>
+                                                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                        </ui:Target.WaitForReady>
+                                                      </ui:Target>
+                                                    </ui:GetOCRText.Target>
+                                                    <ui:GetOCRText.Text>
+                                                      <OutArgument x:TypeArguments="x:String">[strCompanyName]</OutArgument>
+                                                    </ui:GetOCRText.Text>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                  </ui:GetOCRText>
+                                                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_19">
+                                                    <ui:CommentOut.Body>
+                                                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="375.2,262.4" sap2010:WorkflowViewState.IdRef="Sequence_49">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                        <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Get OCR Text 'IMG'" sap:VirtualizedContainerService.HintSize="333.6,169.6" sap2010:WorkflowViewState.IdRef="GetOCRText_7">
+                                                          <ui:GetOCRText.OCREngine>
+                                                            <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
+                                                              <ActivityFunc.Argument>
+                                                                <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                                                              </ActivityFunc.Argument>
+                                                              <ui:GoogleOCR AllowedCharacters="{x:Null}" DeniedCharacters="{x:Null}" FilterRegion="{x:Null}" Language="{x:Null}" Output="{x:Null}" Scale="{x:Null}" Text="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="GoogleOCR_4" Image="[Image]" Invert="True" Profile="None" />
+                                                            </ActivityFunc>
+                                                          </ui:GetOCRText.OCREngine>
+                                                          <ui:GetOCRText.Target>
+                                                            <ui:Target Element="{x:Null}" Id="34454cde-7a2d-4ec9-ac1c-c27453d1c7e7" InformativeScreenshot="6d28907dab98ca5f37291233bf58f340" Selector="&lt;webctrl tag='IMG' /&gt;">
+                                                              <ui:Target.ClippingRegion>
+                                                                <ui:Region Rectangle="395, 412, 44, 15" />
+                                                              </ui:Target.ClippingRegion>
+                                                              <ui:Target.TimeoutMS>
+                                                                <InArgument x:TypeArguments="x:Int32" />
+                                                              </ui:Target.TimeoutMS>
+                                                              <ui:Target.WaitForReady>
+                                                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                              </ui:Target.WaitForReady>
+                                                            </ui:Target>
+                                                          </ui:GetOCRText.Target>
+                                                          <ui:GetOCRText.Text>
+                                                            <OutArgument x:TypeArguments="x:String">[strTotalDue]</OutArgument>
+                                                          </ui:GetOCRText.Text>
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                        </ui:GetOCRText>
+                                                      </Sequence>
+                                                    </ui:CommentOut.Body>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                  </ui:CommentOut>
+                                                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_20">
+                                                    <ui:CommentOut.Body>
+                                                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="375.2,185.6" sap2010:WorkflowViewState.IdRef="Sequence_50">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_19" Level="Info" Message="[&quot;Total :&quot; + strTotalDue]" />
+                                                      </Sequence>
+                                                    </ui:CommentOut.Body>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                  </ui:CommentOut>
+                                                </Sequence>
+                                              </If.Then>
+                                              <If.Else>
+                                                <Sequence sap2010:Annotation.AnnotationText="In case of Sit Ament Corp Invoices" DisplayName="Sit Ament Invoices Processing" sap:VirtualizedContainerService.HintSize="375.2,1202.4" sap2010:WorkflowViewState.IdRef="Sequence_45">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_22" Level="Info" Message="[&quot;Sit Ament Invoice &quot;]" />
+                                                  <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Get OCR Invoice Number Text" sap:VirtualizedContainerService.HintSize="333.6,169.6" sap2010:WorkflowViewState.IdRef="GetOCRText_9">
+                                                    <ui:GetOCRText.OCREngine>
+                                                      <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
+                                                        <ActivityFunc.Argument>
+                                                          <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                                                        </ActivityFunc.Argument>
+                                                        <ui:GoogleOCR AllowedCharacters="{x:Null}" DeniedCharacters="{x:Null}" FilterRegion="{x:Null}" Invert="{x:Null}" Language="{x:Null}" Output="{x:Null}" Profile="{x:Null}" Scale="{x:Null}" Text="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="GoogleOCR_6" Image="[Image]" />
+                                                      </ActivityFunc>
+                                                    </ui:GetOCRText.OCREngine>
+                                                    <ui:GetOCRText.Target>
+                                                      <ui:Target Element="{x:Null}" Id="34454cde-7a2d-4ec9-ac1c-c27453d1c7e7" InformativeScreenshot="a5eee3c8da8fdb4d9b6611b1f4acd0ce" Selector="&lt;webctrl tag='IMG' /&gt;">
+                                                        <ui:Target.ClippingRegion>
+                                                          <ui:Region Rectangle="460, 51, 46, 16" />
+                                                        </ui:Target.ClippingRegion>
+                                                        <ui:Target.TimeoutMS>
+                                                          <InArgument x:TypeArguments="x:Int32" />
+                                                        </ui:Target.TimeoutMS>
+                                                        <ui:Target.WaitForReady>
+                                                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                        </ui:Target.WaitForReady>
+                                                      </ui:Target>
+                                                    </ui:GetOCRText.Target>
+                                                    <ui:GetOCRText.Text>
+                                                      <OutArgument x:TypeArguments="x:String">[strInvoiceNumber]</OutArgument>
+                                                    </ui:GetOCRText.Text>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                  </ui:GetOCRText>
+                                                  <Assign sap2010:Annotation.AnnotationText="obtain invoice number by removing the # character" DisplayName="InvoiceNumber Assignation" sap:VirtualizedContainerService.HintSize="333.6,105.6" sap2010:WorkflowViewState.IdRef="Assign_6">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:String">[strCorrectInvoiceNumber]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:String">[strInvoiceNumber.Replace("#",string.Empty).Trim]</InArgument>
+                                                    </Assign.Value>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                  </Assign>
+                                                  <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Get OCR Invoice Date Text" sap:VirtualizedContainerService.HintSize="333.6,169.6" sap2010:WorkflowViewState.IdRef="GetOCRText_10">
+                                                    <ui:GetOCRText.OCREngine>
+                                                      <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
+                                                        <ActivityFunc.Argument>
+                                                          <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                                                        </ActivityFunc.Argument>
+                                                        <ui:GoogleOCR AllowedCharacters="{x:Null}" DeniedCharacters="{x:Null}" FilterRegion="{x:Null}" Invert="{x:Null}" Language="{x:Null}" Output="{x:Null}" Profile="{x:Null}" Scale="{x:Null}" Text="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="GoogleOCR_7" Image="[Image]" />
+                                                      </ActivityFunc>
+                                                    </ui:GetOCRText.OCREngine>
+                                                    <ui:GetOCRText.Target>
+                                                      <ui:Target Element="{x:Null}" Id="34454cde-7a2d-4ec9-ac1c-c27453d1c7e7" InformativeScreenshot="b54091b06318a9c3330272ea01a32778" Selector="&lt;webctrl tag='IMG' /&gt;">
+                                                        <ui:Target.ClippingRegion>
+                                                          <ui:Region Rectangle="442, 96, 61, 16" />
+                                                        </ui:Target.ClippingRegion>
+                                                        <ui:Target.TimeoutMS>
+                                                          <InArgument x:TypeArguments="x:Int32" />
+                                                        </ui:Target.TimeoutMS>
+                                                        <ui:Target.WaitForReady>
+                                                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                        </ui:Target.WaitForReady>
+                                                      </ui:Target>
+                                                    </ui:GetOCRText.Target>
+                                                    <ui:GetOCRText.Text>
+                                                      <OutArgument x:TypeArguments="x:String">[strInvoiceDate]</OutArgument>
+                                                    </ui:GetOCRText.Text>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                  </ui:GetOCRText>
+                                                  <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Get OCR Company Name Text" sap:VirtualizedContainerService.HintSize="333.6,169.6" sap2010:WorkflowViewState.IdRef="GetOCRText_11">
+                                                    <ui:GetOCRText.OCREngine>
+                                                      <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
+                                                        <ActivityFunc.Argument>
+                                                          <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                                                        </ActivityFunc.Argument>
+                                                        <ui:GoogleOCR AllowedCharacters="{x:Null}" DeniedCharacters="{x:Null}" FilterRegion="{x:Null}" Invert="{x:Null}" Language="{x:Null}" Output="{x:Null}" Profile="{x:Null}" Scale="{x:Null}" Text="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="GoogleOCR_8" Image="[Image]" />
+                                                      </ActivityFunc>
+                                                    </ui:GetOCRText.OCREngine>
+                                                    <ui:GetOCRText.Target>
+                                                      <ui:Target Element="{x:Null}" Id="34454cde-7a2d-4ec9-ac1c-c27453d1c7e7" InformativeScreenshot="336dfd9563746897ebab1573a274cfdf" Selector="&lt;webctrl tag='IMG' /&gt;">
+                                                        <ui:Target.ClippingRegion>
+                                                          <ui:Region Rectangle="40, 116, 71, 16" />
+                                                        </ui:Target.ClippingRegion>
+                                                        <ui:Target.TimeoutMS>
+                                                          <InArgument x:TypeArguments="x:Int32" />
+                                                        </ui:Target.TimeoutMS>
+                                                        <ui:Target.WaitForReady>
+                                                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                        </ui:Target.WaitForReady>
+                                                      </ui:Target>
+                                                    </ui:GetOCRText.Target>
+                                                    <ui:GetOCRText.Text>
+                                                      <OutArgument x:TypeArguments="x:String">[strCompanyName]</OutArgument>
+                                                    </ui:GetOCRText.Text>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                  </ui:GetOCRText>
+                                                  <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Get OCR Total Due Text " sap:VirtualizedContainerService.HintSize="333.6,169.6" sap2010:WorkflowViewState.IdRef="GetOCRText_29">
+                                                    <ui:GetOCRText.OCREngine>
+                                                      <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
+                                                        <ActivityFunc.Argument>
+                                                          <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                                                        </ActivityFunc.Argument>
+                                                        <ui:GoogleOCR AllowedCharacters="{x:Null}" DeniedCharacters="{x:Null}" FilterRegion="{x:Null}" Invert="{x:Null}" Language="{x:Null}" Output="{x:Null}" Profile="{x:Null}" Scale="{x:Null}" Text="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="GoogleOCR_26" Image="[Image]" />
+                                                      </ActivityFunc>
+                                                    </ui:GetOCRText.OCREngine>
+                                                    <ui:GetOCRText.Target>
+                                                      <ui:Target Element="{x:Null}" Id="62327ad6-1a74-449a-b6e4-2e97532ccb8d" InformativeScreenshot="4c8828e544aeb501523e4469af7d6dad" Selector="&lt;webctrl tag='IMG' /&gt;">
+                                                        <ui:Target.ClippingRegion>
+                                                          <ui:Region Rectangle="435, 386, 81, 22" />
+                                                        </ui:Target.ClippingRegion>
+                                                        <ui:Target.TimeoutMS>
+                                                          <InArgument x:TypeArguments="x:Int32" />
+                                                        </ui:Target.TimeoutMS>
+                                                        <ui:Target.WaitForReady>
+                                                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                        </ui:Target.WaitForReady>
+                                                      </ui:Target>
+                                                    </ui:GetOCRText.Target>
+                                                    <ui:GetOCRText.Text>
+                                                      <OutArgument x:TypeArguments="x:String">[strTotalDue]</OutArgument>
+                                                    </ui:GetOCRText.Text>
+                                                  </ui:GetOCRText>
+                                                </Sequence>
+                                              </If.Else>
+                                            </If>
+                                            <ui:AddDataRow DataRow="{x:Null}" sap2010:Annotation.AnnotationText="the activity fulfills de CSV output data table" ArrayRow="[{dtInvoices.Rows(rowData).Item(&quot;ID&quot;),dtInvoices.Rows(rowData).Item(&quot;Due Date&quot;),strCorrectInvoiceNumber,strInvoiceDate,strCompanyName,strTotalDue}]" DataTable="[dtInvoicesCSV]" DisplayName="Add CSV Invoice output Data Row" sap:VirtualizedContainerService.HintSize="794.4,219.2" sap2010:WorkflowViewState.IdRef="AddDataRow_2">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </ui:AddDataRow>
+                                          </Sequence>
+                                        </ActivityAction>
+                                      </uix:NApplicationCard.Body>
+                                      <uix:NApplicationCard.TargetApp>
+                                        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Edge" IconBase64="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" InformativeScreenshot="083e0391a464bd22b73e76c72acdbce3.png" Selector="&lt;html app='msedge.exe' title='sample1.jpg (816×1056)'/&gt;" Url="[strInvoiceFullPath]" />
+                                      </uix:NApplicationCard.TargetApp>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </uix:NApplicationCard>
+                                  </Sequence>
+                                  <Assign sap2010:Annotation.AnnotationText="we try to increase the table's row in order to download the whole line of each page" DisplayName="Row Increase" sap:VirtualizedContainerService.HintSize="911.2,104" sap2010:WorkflowViewState.IdRef="Assign_10">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Int32">[rowData]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Int32">[rowData+1]</InArgument>
+                                    </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Assign>
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="911.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_61" Level="Info" Message="[&quot;Row data &quot;+ rowData.ToString]" />
+                                </Sequence>
+                              </If.Then>
+                              <If.Else>
+                                <Sequence sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Sequence>
+                              </If.Else>
+                            </If>
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:ForEach.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:ForEach>
+                  </Sequence>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1106.4,885.6" sap2010:WorkflowViewState.IdRef="Sequence_86">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If sap2010:Annotation.AnnotationText="to dynamically browse all the pages, we check if the variable browsing the entire extracted table is a multiple of 4 (4,8,12...) since each page has 4 lines" Condition="[rowData Mod 4 = 0]" sap:VirtualizedContainerService.HintSize="483.2,660" sap2010:WorkflowViewState.IdRef="If_8">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If.Then>
+                        <Sequence sap:VirtualizedContainerService.HintSize="375.2,427.2" sap2010:WorkflowViewState.IdRef="Sequence_87">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_59" Level="Info" Message="[rowData.ToString + &quot;is muliple of 4, we click on next page&quot;]" />
+                          <uix:NClick sap2010:Annotation.AnnotationText="for each 4 row data on the page, we click on next button, in order to recover the rest of &lt;TBODY&gt;&lt;TD&gt;" ClickType="Single" DisplayName="Click 'Next'" sap:VirtualizedContainerService.HintSize="333.6,201.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="dff7edce-2821-4c3c-add9-c823fe9317e3" Version="V1">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://rpachallengeocr.azurewebsites.net/" DesignTimeRectangle="1705, 560, 72, 45" ElementType="Text" FriendlyName="'Next'" FullSelectorArgument="&lt;webctrl id='tableSandbox_next' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='tableSandbox_next' tag='A' type='' aaname='Next' check:text='Next' /&gt;" Guid="f1a574ae-6418-4319-892d-6482192f2b12" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEwAAAAxCAYAAABwK080AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAGgSURBVGhD7daLacMwFIXh7uS5olWMd8gAziTBYwS8w60k36uHH6GHRFDE+UE0VRIXfchyf4RBEQyMYGAEAyMYGMHACAZGMDCCgREMjGBgBAMjGBjBwAgGRjAwgoG1AXuOMgyDH6MsOrVvmd6//19rDObHdE7SBmyR8c3f/EZNwcYp/HQyv3S+iGBlBvZUmNssq75lEaysAJPXLM6/do+a7Axsfbj4vTQStEL4Ea+ZWmW+bfPufo9/J3//fGd/Wnsw3wZR49RgtvBykTZnnzG0fB0Dzog97LCYLr5YSAl2XLi23536e7xO+TrVDZgvzuUdVIJdn2cKXZyB1W17OBt7AvNFGF1kRsrn0OWoYK7Os1BnYHYbhfm/7bBj22eduMOZF+oNzGcPgLFA2ubOnmoKYDtMrxvPNDvDznZfT2DpXAoLS7tq/0QM2ZxB7vB8dp7lf1n0O32B+fT9/W243W7FSDiK5Ud9zYxvaPmhcLZjP68NWMcRDIxgYAQDIxgYwcAIBkYwMIKBEQyMYGAEAyMYGMHACAZGMDCCgREMjGBQIr+srKRzTt5UoAAAAABJRU5ErkJggg==" InformativeScreenshot="b9a3ef1d3ccf8bd9bab9ccf4e0a4e5c8.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Automation Challenge - OCR' /&gt;" SearchSteps="FuzzySelector, Image" />
+                            </uix:NClick.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NClick>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence sap2010:WorkflowViewState.IdRef="Sequence_88">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="483.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_60" Level="Info" Message="[rowData.ToString + &quot; doesnt reach the muliple of 4&quot;]" />
+                  </Sequence>
+                </Sequence>
+              </ui:InterruptibleDoWhile.Body>
+              <ui:InterruptibleDoWhile.Condition>
+                <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="rowData &lt; int_dtInvoicesRowNumber" />
+              </ui:InterruptibleDoWhile.Condition>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:InterruptibleDoWhile>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" IconBase64="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" InformativeScreenshot="8b77ff053743a896233eba051a83835f.png" Selector="&lt;html app='msedge.exe' title='Automation Challenge - OCR'/&gt;" Url="https://rpachallengeocr.azurewebsites.net/" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <Assign sap2010:Annotation.AnnotationText="the activity tries to get today's date in order to filter the CVS Invoice table based on this date value&#xD;&#xA;" DisplayName="Today Assignation" sap:VirtualizedContainerService.HintSize="1258.4,136" sap2010:WorkflowViewState.IdRef="Assign_25">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[toDay]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[Date.Now.ToString("dd-MM-yyyy")]</InArgument>
+      </Assign.Value>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="1258.4,60" sap2010:WorkflowViewState.IdRef="Assign_26">
+      <Assign.To>
+        <OutArgument x:TypeArguments="sd1:DataTable">[dtInvoicesCSVFiltered]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="sd1:DataTable">[dtInvoicesCSV.Select("[Due Date]&lt;='"+toDay+"'").CopyToDataTable]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:CommentOut DisplayName="Enable for the use of Excel File to check te before et afer filter by date" sap:VirtualizedContainerService.HintSize="1258.4,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_30">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="241.6,161.6" sap2010:WorkflowViewState.IdRef="Sequence_84">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Sequence DisplayName="The use of Excel File to check te before et afer filter by date" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_83">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[dtInvoicesCSV]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="333.6,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="BeforeFiltered" WorkbookPath="Invoices.xlsx" />
+            <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[dtInvoicesCSVFiltered]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="333.6,116" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="AfterFiltered" WorkbookPath="Invoices.xlsx" />
+          </Sequence>
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+    <ui:WriteCsvFile Encoding="{x:Null}" AddHeaders="True" sap2010:Annotation.AnnotationText="the activity filters the table containing all the data from different invoices to only retrieve those whose date is less than or equal to today" DataTable="[dtInvoicesCSVFiltered]" Delimitator="Comma" DisplayName="Write CSV" FilePath="InvoiceCSV.csv" sap:VirtualizedContainerService.HintSize="1258.4,199.2" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:WriteCsvFile>
+  </Sequence>
+</Activity>
